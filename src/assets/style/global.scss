@@ -1,0 +1,91 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+
+// Zeroing
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+// Variable
+$primary: #a3ceff;
+$bgc: #131214;
+$bgc-window: #1E1E1E;
+
+// Body
+body{
+  max-width: 1920px;
+  width: 100%;
+  background-color: $bgc;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+// Mixins
+@mixin main-window() {
+  background-color: $bgc-window;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+// Components Import
+@import '/src/components/Navbar/Navbar.scss';
+@import '/src/components/NowWeather/NowWeather.scss';
+@import '/src/components/DailyWeather/DailyWeather.scss';
+@import '/src/components/TodaysDetails/TodaysDetails.scss';
+@import '/src/components/HourlyWeather/HourlyWeather.scss';
+
+
+// Global Edit
+.main{
+  display: flex;
+  padding: 0 0 30px;
+  gap: 40px;
+  &-left, &-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: #464646;
+  margin: 20px 0;
+}
+
+.not-city {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+  font-size: 40px;
+}
+
+
+// Typography
+.title {
+  opacity: 0.5;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.data-title {
+  opacity: 0.5;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.symbol {
+  font-size: 24px;
+  font-weight: 600;
+}

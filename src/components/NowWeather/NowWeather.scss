@@ -1,0 +1,30 @@
+.now-weather{
+  @include main-window;
+  width: 100%;
+  &-temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    h3 {
+      font-weight: 600;
+      font-size: 48px;
+    }
+  }
+  > p{
+    font-size: 24px;
+    &::first-letter{
+      text-transform: uppercase;
+    }
+  }
+  &-data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &-date, &-geo{
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+  }
+}

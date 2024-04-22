@@ -1,0 +1,28 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  &__logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    p {
+      font-size: 36px;
+      font-weight: 600;
+    }
+  }
+  .input{
+    padding: 15px 30px;
+    border-radius: 100px;
+    background: $bgc-window;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 20px;
+    border: 1px solid transparent;
+    width: 560px;
+    transition: 500ms;
+    &:focus{
+      border: 1px solid $primary;
+    }
+  }
+}

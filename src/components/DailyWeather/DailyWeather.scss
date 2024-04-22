@@ -1,0 +1,28 @@
+.daily-weather {
+  > h2 {
+    margin-bottom: 20px
+  }
+  &-window {
+    @include main-window;
+    display: flex;
+    width: 420px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &-item{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    &Date{
+      display: flex;
+      align-items: center;
+      img {
+        width: 50px;
+      }
+    }
+    .date {
+      width: 107px;
+      text-align: right;
+    } 
+  }
+}

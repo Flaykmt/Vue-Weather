@@ -1,0 +1,33 @@
+.details{
+  @include main-window;
+  > h2{
+    font-size: 30px;
+  }
+  &__info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 20px;
+    &-card{
+      background-color: rgb(27, 27, 27);
+      padding: 20px;
+      border-radius: 10px;
+      &-data{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        gap: 30px;
+        .data{
+          display: flex;
+          gap: 20px;
+        }
+        p{
+          opacity: 0.5;
+        }
+        h3{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
