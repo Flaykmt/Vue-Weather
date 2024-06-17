@@ -5,7 +5,7 @@
       <h3>{{Math.round(weather.temp)}}°с</h3>
       <img :src="'https://openweathermap.org/img/wn/' + icon + '@2x.png'" alt="">
     </div>
-    <!-- <p>{{weather.descr}}</p> FIX -->
+    <!-- <p>{{weather.descr}}</p> I don`t know why I wrote it -->
     <hr>
     <div class="now-weather-data">
       <div class="now-weather-data-date">

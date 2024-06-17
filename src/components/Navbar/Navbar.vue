@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="navbar__logo">
-      <!-- <img :src="'https://openweathermap.org/img/wn/' + + '@2x.png'" alt="" /> FIX -->
+      <img :src="'https://openweathermap.org/img/wn/' + icon + '@2x.png'" alt="" />
       <p>Vue weather</p>
     </div>
     <input class="input" placeholder="Search..." v-model="searchCity" @keyup.enter="searchWeather" />
@@ -12,7 +12,7 @@
 import { mapActions, mapGetters } from 'vuex';
 
 export default {
-  computed: mapGetters(['weather']),
+  computed: mapGetters(['weather', 'icon']),
   data() {
     return {
       searchCity: '',
